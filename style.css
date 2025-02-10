@@ -40,3 +40,74 @@ p {
 #__next {
   isolation: isolate;
 }
+
+.container,
+.sidebar,
+.logo-track,
+.sidebar-nav,
+.sidebar-nav-top,
+.sidebar-nav-top div,
+.sidebar-nav-bottom,
+.sidebar-nav-bottom div{
+  display: grid;
+}
+
+.container {
+  grid-template-columns: minmax(22rem, 1fr) 5fr;
+  
+}
+
+.sidebar {
+  background-color: rgb(25, 127, 196);
+  height: 100vh;
+  gap: 1em;
+  font-weight: 700;
+  grid-template-rows: 1fr 5fr 5fr;
+}
+
+.logo-track {
+  grid-auto-flow: column;
+  justify-items: center;
+  width: 55%;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.logo-track h1 {
+  align-self: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.logo-track svg {
+  fill: white;
+  height: 2.8em;
+}
+
+.sidebar-nav {
+  gap: 5rem;
+}
+
+.sidebar-nav-top,
+.sidebar-nav-bottom {
+  gap: 1.2em;
+}
+
+.sidebar-nav-top div,
+.sidebar-nav-bottom div {
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 2em;
+  margin-left: 2em;
+  /* outline: 1px red solid; */
+}
+
+.sidebar-nav svg {
+  height: 1.5rem;
+  fill: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
