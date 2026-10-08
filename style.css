@@ -69,7 +69,7 @@ p {
 }
 
 .container {
-  grid-template-columns: minmax(22rem, 1fr) 5fr;
+  grid-template-columns: 18rem 1fr;
   height: 100vh;
   overflow: hidden;
 }
@@ -84,8 +84,8 @@ p {
 
 .logo-track {
   grid-auto-flow: column;
-  justify-items: center;
-  width: 55%;
+  justify-content: start;
+  gap: 0.75rem;
   margin-top: 1em;
   margin-left: 1em;
 }
@@ -355,7 +355,7 @@ h2 {
 
 @media (max-width: 1100px), (max-height: 700px) {
   .container {
-    grid-template-columns: 16rem 1fr;
+    grid-template-columns: 14rem 1fr;
     height: auto;
     min-height: 100vh;
     overflow: visible;
@@ -417,7 +417,6 @@ h2 {
   }
 
   .logo-track {
-    width: auto;
     margin-left: 0;
     justify-content: center;
   }
